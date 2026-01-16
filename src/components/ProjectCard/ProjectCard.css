@@ -1,0 +1,35 @@
+.category-title {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-item {
+  aspect-ratio: 16 / 9;
+  flex: 0 0 calc(20% - 10px);
+  list-style: none;
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 10px;
+  border-image-slice: 1;
+  object-fit: cover;
+  transition: 300ms ease-in-out;
+  border: 0px solid transparent;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  z-index: 100;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #ffffff85),
+    linear-gradient(to right, #2e2e2e 0%, #9b9b9b 100%);
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
